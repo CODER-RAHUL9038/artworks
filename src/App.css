@@ -1,0 +1,23 @@
+.container {
+  padding: 20px;
+}
+.p-paginator .p-paginator-page,
+.p-paginator .p-paginator-prev,
+.p-paginator .p-paginator-next,
+.p-paginator .p-paginator-first,
+.p-paginator .p-paginator-last {
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  margin: 0 3px;
+  max-width: 2rem;
+  max-height: 2rem;
+}
+.p-paginator .p-highlight {
+  background-color: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+}
+
+.p-paginator-current {
+  margin-right: auto;
+}
