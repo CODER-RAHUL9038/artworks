@@ -86,8 +86,8 @@ https://display-artwork.netlify.app/
 ## 📥 Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
-cd YOUR_REPO
+git clone https://github.com/CODER-RAHUL9038/artworks.git
+cd artworks
 npm install
 npm run dev
 ```
