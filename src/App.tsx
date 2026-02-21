@@ -20,7 +20,7 @@ function App() {
   const rowPerPage = 12;
 
   useEffect(() => {
-    const getdata = async () => {
+    const fetchdata = async () => {
       try {
         setLoading(true);
         const response = await fetchArtworks(currentPage);
@@ -33,7 +33,7 @@ function App() {
         setLoading(false);
       }
     };
-    getdata();
+    fetchdata();
   }, [currentPage]);
 
   const onPageChange = (event: DataTablePageEvent) => {
@@ -70,9 +70,10 @@ function App() {
   };
 
   const handleCustomSelect = () => {
-    const count = parseInt(selectCount);
+    const count = Number(selectCount);
     if (!count || count <= 0) {
       alert("Enter valid number");
+      return;
     }
     setSelectedIds((prev) => {
       const updated = new Set(prev);
